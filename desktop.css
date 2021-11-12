@@ -1,0 +1,16 @@
+/* =============== HEADER ========== */
+header {
+    max-width: 1260px;
+    width: 100%;
+}
+
+/* ================ MAIN =========== */
+main {
+    max-width: 1260px;
+    width: 100%;
+}
+
+#grid-card {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}

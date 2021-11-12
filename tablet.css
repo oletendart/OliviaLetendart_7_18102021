@@ -1,0 +1,9 @@
+/* ===================== MAIN ============== */
+#filter-button {
+    flex-direction: row;
+}
+
+#grid-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
