@@ -1,3 +1,7 @@
+:root {
+    font-size: 12px;
+}
+
 /* ===================== MAIN ============== */
 #filter-button {
     flex-direction: row;

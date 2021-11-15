@@ -1,3 +1,7 @@
+:root {
+    font-size: 14px;
+}
+
 /* =============== HEADER ========== */
 header {
     max-width: 1260px;
@@ -8,6 +12,14 @@ header {
 main {
     max-width: 1260px;
     width: 100%;
+}
+
+.card .inset-card {
+    padding: 20px;
+}
+
+.inset-card p, ul {
+    margin-top: 20px;
 }
 
 #grid-card {
