@@ -11,3 +11,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
+.t-dropdown-input {
+    font-size: 1.6rem;
+}
+
+.card {
+    font-size: 1.2rem;
+}

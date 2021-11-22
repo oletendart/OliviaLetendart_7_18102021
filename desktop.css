@@ -14,11 +14,19 @@ main {
     width: 100%;
 }
 
+.t-dropdown-input {
+    font-size: 1.4rem;
+}
+
+.card {
+    font-size: 1.2rem;
+}
+
 .card .inset-card {
     padding: 20px;
 }
 
-.inset-card p, ul {
+.inset-card p:last-child, ul {
     margin-top: 20px;
 }
 
