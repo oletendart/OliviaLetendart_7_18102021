@@ -67,15 +67,16 @@ header img {
     color: #FFF;
     font-size: 1.4rem;
     border-radius: 5px;
-    padding: 10px 22px 10px 20px;
+    padding: 10px 12px 10px 20px;
     margin: 10px;
+    align-items: center;
 }
 
 #tag span i {
     font-size: 20px;
     line-height: 20px;
     height: 20px;
-    width: 10px;
+    width: 20px;
     text-align: center;
     margin-left: 13px;
 }
@@ -159,7 +160,7 @@ main {
     color: #FFF;
 }
 
-.t-select-btn {
+i.t-select-btn {
     position: absolute;
     width: 16px;
     height: 16px;
