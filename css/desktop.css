@@ -29,6 +29,9 @@ main {
 .inset-card p:last-child, ul {
     margin-top: 20px;
 }
+.inset-card ul {
+    margin: 20px 5px 0 0;
+}
 
 #grid-card {
     grid-template-columns: 1fr 1fr 1fr;

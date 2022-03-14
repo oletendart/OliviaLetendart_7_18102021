@@ -103,15 +103,20 @@ main {
 
 .t-dropdown-list {
     display: none;
-    border: 1px solid #DDD;
+    width: 100%;
     z-index: 10;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
     list-style: none;
-    padding: 0;
+    padding: 0 0 16px 20px;
+    margin: 0;
     height: 150px;
     overflow: auto;
     position: absolute;
-    margin-top: 10px;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+}
+
+.t-dropdown-list.active {
+    display: block;
 }
 
 .t-dropdown-item {
@@ -127,7 +132,11 @@ main {
     overflow: hidden;
     background-color: #FFF;
     box-sizing: content-box;
-    border-radius: .5rem;
+    border-radius: 5px;
+}
+
+.t-dropdown-select.borderRadius-active {
+    border-radius: 5px 5px 0 0;
 }
 
 .t-dropdown-input {
@@ -162,13 +171,20 @@ main {
 
 i.t-select-btn {
     position: absolute;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     color: #FFF;
+    cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
+    font-size: 24px;
+    transition: transform 500ms ease;
+}
+i.t-select-btn.rotate-active {
+    transform: rotate(-180deg) translateY(50%);
 }
 
 /* CARD */
@@ -202,8 +218,15 @@ i.t-select-btn {
     position: relative;
 }
 
+.inset-card p {
+    text-align: justify;
+}
+
 .inset-card p:last-child, ul {
     margin-top: 10px;
+}
+.inset-card ul {
+    margin: 10px 5px 0 0;
 }
 
 .card .inset-card {
