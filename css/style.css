@@ -63,7 +63,6 @@ header img {
 
 #tag span {
     display: inline-flex;
-    background-color: #3282F7;
     color: #FFF;
     font-size: 1.4rem;
     border-radius: 5px;
@@ -79,6 +78,7 @@ header img {
     width: 20px;
     text-align: center;
     margin-left: 13px;
+    cursor: pointer;
 }
 
 /* ================ MAIN ============ */
@@ -98,7 +98,10 @@ main {
 /* STYLE INPUT */
 
 .t-dropdown-block {
-    position: relative
+    position: relative;
+}
+.t-dropdown-block.width-active {
+    width: 100%;
 }
 
 .t-dropdown-list {
@@ -116,7 +119,12 @@ main {
 }
 
 .t-dropdown-list.active {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.t-dropdown-list li {
+    cursor: pointer;
 }
 
 .t-dropdown-item {
@@ -242,3 +250,4 @@ i.t-select-btn.rotate-active {
     align-items: center;
     justify-content: flex-end;
 }
+
