@@ -179,17 +179,17 @@ function features(data) {
 
         result = [];
 
-        recipes.forEach((recipe) => {
-            let ingredientFound = recipe.ingredients.find((element) => {
+        for (let i = 0; i < recipes.length; i++) {
+            let ingredientFound = recipes[i].ingredients.find((element) => {
                 return element.ingredient.toLowerCase().search(searchbarValue.toLowerCase()) !== -1;
             });
-            let textFound = recipe.name.toLowerCase().search(searchbarValue.toLowerCase()) !== -1;
-            let descriptionFound = recipe.description.toLowerCase().search(searchbarValue.toLowerCase()) !== -1;
+            let textFound = recipes[i].name.toLowerCase().search(searchbarValue.toLowerCase()) !== -1;
+            let descriptionFound = recipes[i].description.toLowerCase().search(searchbarValue.toLowerCase()) !== -1;
 
             if (ingredientFound || textFound || descriptionFound) {
-                result.push(recipe);
+                result.push(recipes[i]);
             }
-        })
+        }
 
         displayRecipes(result);
         resulttag = result;
